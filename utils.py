@@ -21,7 +21,7 @@ def prep_data(data, company_name):
     data['len_words_1'] =  len(company_name.split())
     data['name_2'] = data['name_2'].str.lower().replace(r"[0-9().,!?@\'\`\"\_\n-_]", " ")
     data['len_str_2'] =  data['name_2'].str.len()
-    data['len_words_2'] =  data['name_2'].str.split().len()
+    data['len_words_2'] =  data['name_2'].str.split().str.len()
     data['len_intersection'] = data.apply(
         lambda x: len(set(x['name_1'].split(' ')) & set(x['name_2'].split(' '))),
         axis = 1)
