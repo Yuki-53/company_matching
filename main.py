@@ -5,6 +5,7 @@ import numpy as np
 from catboost import CatBoostClassifier
 from tqdm import tqdm
 
+
 def get_pred(database, company_name, model, feats):
     request = utils.prep_data(database[['name_2']], company_name)
     pred_proba = model.predict_proba(request[feats])[:, 1]
@@ -32,5 +33,6 @@ def main():
     labels = range(len(database))
     utils.get_metrics(pred_probas, true_vals, labels)
 
+  
 if __name__ == "__main__":
     main()
