@@ -9,16 +9,16 @@
 
 Структура репозитория:
 
-./reference/description.md - подробное описание
+`./reference/description.md` - подробное описание
 
-./experiments/ - директория с ipython ноутбуками
+`./experiments/` - директория с ipython ноутбуками
 
-./main.py - основной скрипт для демонстрации работы
+`./main.py` - основной скрипт для демонстрации работы
 
-./utils.py - вспомогательные функции
+`./utils.py` - вспомогательные функции
 
-./requirements.txt - файл с зависимостями
+`./requirements.txt` - файл с зависимостями
 
-./data/ - данные
+`./data/` - данные
 
-./catboost_model.bin - веса модели
+`./catboost_model.bin` - веса модели
