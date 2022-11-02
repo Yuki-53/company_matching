@@ -19,6 +19,6 @@
 
 `./requirements.txt` - файл с зависимостями
 
-`./data/` - данные
-
 `./catboost_model.bin` - веса модели
+
+Ссылка на данные и модель https://drive.google.com/drive/folders/1ZyMQxfISZcS6uanY5zbKYdPgMF21Frco?usp=share_link
